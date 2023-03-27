@@ -1,0 +1,375 @@
+scheduled_tasks:
+- task_name: make_backup
+  time_spec:
+    n: 1
+    every: day
+    at: {minute: 0, hour: 19}
+  job_id: CSEAIMCX
+dependencies: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}
+- source: /runtime/services/google.yml
+  client_config:
+    app_files:
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
+      copyRequiresWriterPermission: false
+      python_name: change_note_system_tables_backup
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      shared: false
+      createdDate: '2023-03-26T15:20:23.183Z'
+      id: 1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
+      lastViewedByMeDate: '2023-03-26T15:20:23.183Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/permissions/me',
+        etag: '"lmHYE6ERLFL5nRZJAp5G9C8o20E"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTg0NDAyMzE4Mw"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-26T15:20:23.183Z'
+      title: change_note_system_tables_backup
+      version: '1'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-26T15:20:23.183Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      copyRequiresWriterPermission: false
+      python_name: spc_support_system_backup
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      shared: false
+      createdDate: '2023-03-26T15:27:04.141Z'
+      id: 14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      lastViewedByMeDate: '2023-03-26T15:27:04.141Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/permissions/me',
+        etag: '"RCXxeVOMaWhyXLRZ_nqSYC5jWcU"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTg0NDQyNDE0MQ"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-26T15:27:04.141Z'
+      title: spc_support_system_backup
+      version: '1'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-26T15:27:04.141Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      copyRequiresWriterPermission: false
+      python_name: systems_and_customers_tables_backup
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      shared: false
+      createdDate: '2023-03-27T11:51:04.356Z'
+      id: 1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      lastViewedByMeDate: '2023-03-27T11:51:04.356Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/permissions/me',
+        etag: '"lYTprH3YpHRnsO5tlqSFTohWJxE"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTkxNzg2NDM1Ng"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-27T11:51:04.356Z'
+      title: systems_and_customers_tables_backup
+      version: '1'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-27T11:51:04.356Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+  server_config: {}
+package_name: Backup_Change_Notes
+allow_embedding: false
+name: Clone of Backup of Systems and Customers System
+runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
+metadata: {title: Backup of Systems and Customers System}
+startup_form: Form1
+db_schema:
+  users:
+    title: Users
+    client: search
+    server: full
+    columns:
+    - name: email
+      admin_ui: {width: 200}
+      type: string
+    - name: firstname
+      admin_ui: {width: 200}
+      type: string
+    - name: user_type
+      admin_ui: {width: 200}
+      type: string
+    - name: enabled
+      admin_ui: {width: 100}
+      type: bool
+    - name: last_login
+      admin_ui: {width: 200}
+      type: datetime
+    - name: password_hash
+      admin_ui: {width: 200}
+      type: string
+    - name: confirmed_email
+      admin_ui: {width: 200}
+      type: bool
+    - name: n_password_failures
+      admin_ui: {width: 200}
+      type: number
+    - name: mfa
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: remembered_logins
+      admin_ui: {width: 200}
+      type: simpleObject
+    - name: signed_up
+      admin_ui: {width: 200}
+      type: datetime
+    - name: email_confirmation_key
+      admin_ui: {width: 200}
+      type: string
+  suppported_products:
+    title: suppported_products
+    client: search
+    server: full
+    columns:
+    - name: Name
+      admin_ui: {width: 200}
+      type: string
+    - name: Account
+      admin_ui: {width: 200}
+      type: string
+    - name: 4S_Country
+      admin_ui: {width: 200}
+      type: string
+    - name: CFApplicationArea
+      admin_ui: {width: 200}
+      type: string
+    - name: InUseStatus
+      admin_ui: {width: 200}
+      type: string
+    - name: Shipping_Address_Country
+      admin_ui: {width: 200}
+      type: string
+    - name: Location_c
+      admin_ui: {width: 200}
+      type: string
+    - name: longitude
+      admin_ui: {width: 200}
+      type: number
+    - name: latitude
+      admin_ui: {width: 200}
+      type: number
+    - name: Account_id
+      admin_ui: {width: 200}
+      type: string
+    - name: System_id
+      admin_ui: {width: 200}
+      type: string
+    - name: Live_version_no
+      admin_ui: {width: 200}
+      type: string
+    - name: Version_Level
+      admin_ui: {width: 200}
+      type: string
+    - name: Customer_Type
+      admin_ui: {width: 200}
+      type: string
+    - name: Interfaces
+      admin_ui: {width: 574.181818}
+      type: string
+    - name: Inbound_INR
+      admin_ui: {width: 200}
+      type: string
+    - name: Bidirectional_SystmOne
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_ADT
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_Demographics
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_Medications
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Billing
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Dosing
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_PDF
+      admin_ui: {width: 200}
+      type: string
+    - name: Outbound_Query
+      admin_ui: {width: 200}
+      type: string
+    - name: Inbound_TestResults
+      admin_ui: {width: 200}
+      type: string
+    - name: Bidirectional_Telehealth
+      admin_ui: {width: 200}
+      type: string
+    - name: AC_Non_AC
+      admin_ui: {width: 200}
+      type: string
+    - name: Operating_System
+      admin_ui: {width: 200}
+      type: string
+    - name: Database_Version
+      admin_ui: {width: 250.01136400000001}
+      type: string
+    - name: Remote_Access_Available
+      admin_ui: {width: 200}
+      type: string
+    - name: appareas
+      admin_ui: {width: 200}
+      type: string
+  last_date_refreshed:
+    title: Last_Date_Refreshed
+    client: search
+    server: full
+    columns:
+    - name: last_date_refreshed
+      admin_ui: {width: 200}
+      type: string
+    - name: dateid
+      admin_ui: {width: 200}
+      type: number
+  application_area:
+    title: application_area
+    client: search
+    server: full
+    columns:
+    - name: application_area
+      admin_ui: {width: 200}
+      type: string
+    - name: app_group
+      admin_ui: {width: 200}
+      type: string
+  geography:
+    title: Geography
+    client: search
+    server: full
+    columns:
+    - name: placename
+      admin_ui: {width: 200}
+      type: string
+    - name: coordinates
+      admin_ui: {width: 386.011364}
+      type: string
+  location:
+    title: Location
+    client: search
+    server: full
+    columns:
+    - name: location_name
+      admin_ui: {width: 338}
+      type: string
+    - name: latitude
+      admin_ui: {width: 200}
+      type: number
+    - name: longitude
+      admin_ui: {width: 200}
+      type: number
+  interface_types:
+    title: Interface_Types
+    client: search
+    server: full
+    columns:
+    - name: Interface_Type
+      admin_ui: {width: 200}
+      type: string
+  test:
+    title: test
+    client: search
+    server: full
+    columns:
+    - name: name
+      admin_ui: {width: 200}
+      type: string
+    - name: employed
+      admin_ui: {width: 200}
+      type: string
+    - name: age
+      admin_ui: {width: 200}
+      type: string
