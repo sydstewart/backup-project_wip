@@ -10,7 +10,7 @@ components:
   components:
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: BACKUP Systems and Customers Tables, font_size: null,
+      foreground: '', visible: true, text: BACKUP Project WIP Tables, font_size: null,
       font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
       background: '', bold: false, underline: false, icon: ''}
     name: list_tables_button

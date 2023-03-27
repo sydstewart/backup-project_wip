@@ -3,7 +3,7 @@ scheduled_tasks:
   time_spec:
     n: 1
     every: day
-    at: {minute: 0, hour: 19}
+    at: {minute: 15, hour: 19}
   job_id: CSEAIMCX
 dependencies: []
 services:
@@ -157,12 +157,60 @@ services:
       modifiedDate: '2023-03-27T11:51:04.356Z'
       quotaBytesUsed: '0'
       ownerNames: [Syd Stewart]
-  server_config: {}
+    - capabilities: {canEdit: true, canCopy: false}
+      editable: true
+      copyable: false
+      embedLink: https://drive.google.com/embeddedfolderview?id=1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv
+      copyRequiresWriterPermission: false
+      python_name: project_wip_tables_backup
+      explicitlyTrashed: false
+      lastModifyingUser:
+        displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      shared: false
+      createdDate: '2023-03-27T15:08:36.675Z'
+      id: 1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv
+      owners:
+      - displayName: Syd Stewart
+        kind: drive#user
+        isAuthenticatedUser: true
+        permissionId: 06139115947875066540
+        emailAddress: stewartsyd70@gmail.com
+        picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
+      markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
+      spaces: [drive]
+      parents:
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv/parents/0AFZ846S7fbL-Uk9PVA',
+        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
+      iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
+      selfLink: https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv
+      lastViewedByMeDate: '2023-03-27T15:08:41.636Z'
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv/permissions/me',
+        etag: '"jtuJu4D10p_ETFSLOlcCaDlTNMQ"', pendingOwner: false}
+      lastModifyingUserName: Syd Stewart
+      etag: '"MTY3OTkyOTcxNjY3NQ"'
+      kind: drive#file
+      modifiedByMeDate: '2023-03-27T15:08:36.675Z'
+      title: project_wip_tables_backup
+      version: '2'
+      appDataContents: false
+      writersCanShare: true
+      alternateLink: https://drive.google.com/drive/folders/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv
+      mimeType: application/vnd.google-apps.folder
+      modifiedDate: '2023-03-27T15:08:36.675Z'
+      quotaBytesUsed: '0'
+      ownerNames: [Syd Stewart]
+  server_config: {enc_delegation_refresh_token: VxRQ0QvBdFGE4silqLErC6McRzN61vH0QtSKmcoH+5iv68VBJKMNNkU4DH2pi1ztbDqMSJuGJw2fW1GuwIkfXm3y3QH1He8+yyQBJuAc4+6ze3JpCda0+UJ3k2uYhd2gi6yv422SCZ72AneGTRbWC4NBhKPGK5cHSZLUwyW1ACewYsJjX4833Bx5R4OS3Q9SGSiku2rvq9HQ8af8qINPDhuSik8XS3mv6OucCPD377xBF10RyWsTe8viwvT+8uWAwyPeYnIcAloWlEaDYzzm17ixGZ0KMEf2RcjlMEiuHaCWbcV09ulwUd/wItL8Bg==}
 package_name: Backup_Change_Notes
 allow_embedding: false
-name: Clone of Backup of Systems and Customers System
+name: Backup of Project WIP
 runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null}
-metadata: {title: Backup of Systems and Customers System}
+metadata: {title: Backup of Project WIP}
 startup_form: Form1
 db_schema:
   users:
@@ -206,170 +254,82 @@ db_schema:
     - name: email_confirmation_key
       admin_ui: {width: 200}
       type: string
-  suppported_products:
-    title: suppported_products
+  projects_stages:
+    title: projects_stages
     client: search
     server: full
     columns:
-    - name: Name
+    - name: project_board
       admin_ui: {width: 200}
       type: string
-    - name: Account
+    - name: project_column
       admin_ui: {width: 200}
       type: string
-    - name: 4S_Country
-      admin_ui: {width: 200}
-      type: string
-    - name: CFApplicationArea
-      admin_ui: {width: 200}
-      type: string
-    - name: InUseStatus
-      admin_ui: {width: 200}
-      type: string
-    - name: Shipping_Address_Country
-      admin_ui: {width: 200}
-      type: string
-    - name: Location_c
-      admin_ui: {width: 200}
-      type: string
-    - name: longitude
+    - name: count
       admin_ui: {width: 200}
       type: number
-    - name: latitude
+    - name: new_project_column
+      admin_ui: {width: 200}
+      type: link_single
+      target: stage_translate
+    - name: no_of_days_work
       admin_ui: {width: 200}
       type: number
-    - name: Account_id
+  projects:
+    title: projects
+    client: search
+    server: full
+    columns:
+    - name: project_name
       admin_ui: {width: 200}
       type: string
-    - name: System_id
+    - name: project_board
       admin_ui: {width: 200}
       type: string
-    - name: Live_version_no
+    - name: project_column
       admin_ui: {width: 200}
       type: string
-    - name: Version_Level
+    - name: project_stages
+      admin_ui: {width: 200}
+      type: link_single
+      target: projects_stages
+    - name: new_stages
+      admin_ui: {width: 200}
+      type: link_single
+      target: stage_translate
+  stage_translate:
+    title: stage_translate
+    client: search
+    server: full
+    columns:
+    - name: project_column
       admin_ui: {width: 200}
       type: string
-    - name: Customer_Type
-      admin_ui: {width: 200}
-      type: string
-    - name: Interfaces
-      admin_ui: {width: 574.181818}
-      type: string
-    - name: Inbound_INR
-      admin_ui: {width: 200}
-      type: string
-    - name: Bidirectional_SystmOne
-      admin_ui: {width: 200}
-      type: string
-    - name: Inbound_ADT
-      admin_ui: {width: 200}
-      type: string
-    - name: Inbound_Demographics
-      admin_ui: {width: 200}
-      type: string
-    - name: Inbound_Medications
-      admin_ui: {width: 200}
-      type: string
-    - name: Outbound_Billing
-      admin_ui: {width: 200}
-      type: string
-    - name: Outbound_Dosing
-      admin_ui: {width: 200}
-      type: string
-    - name: Outbound_PDF
-      admin_ui: {width: 200}
-      type: string
-    - name: Outbound_Query
-      admin_ui: {width: 200}
-      type: string
-    - name: Inbound_TestResults
-      admin_ui: {width: 200}
-      type: string
-    - name: Bidirectional_Telehealth
-      admin_ui: {width: 200}
-      type: string
-    - name: AC_Non_AC
-      admin_ui: {width: 200}
-      type: string
-    - name: Operating_System
-      admin_ui: {width: 200}
-      type: string
-    - name: Database_Version
-      admin_ui: {width: 250.01136400000001}
-      type: string
-    - name: Remote_Access_Available
-      admin_ui: {width: 200}
-      type: string
-    - name: appareas
+    - name: new_column
       admin_ui: {width: 200}
       type: string
   last_date_refreshed:
-    title: Last_Date_Refreshed
+    title: last_date_refreshed
     client: search
     server: full
     columns:
     - name: last_date_refreshed
       admin_ui: {width: 200}
       type: string
-    - name: dateid
+    - name: date_id
       admin_ui: {width: 200}
       type: number
-  application_area:
-    title: application_area
+  work:
+    title: work
     client: search
     server: full
     columns:
-    - name: application_area
+    - name: new_project_column
       admin_ui: {width: 200}
       type: string
-    - name: app_group
-      admin_ui: {width: 200}
-      type: string
-  geography:
-    title: Geography
-    client: search
-    server: full
-    columns:
-    - name: placename
-      admin_ui: {width: 200}
-      type: string
-    - name: coordinates
-      admin_ui: {width: 386.011364}
-      type: string
-  location:
-    title: Location
-    client: search
-    server: full
-    columns:
-    - name: location_name
-      admin_ui: {width: 338}
-      type: string
-    - name: latitude
+    - name: No_of_days_work
       admin_ui: {width: 200}
       type: number
-    - name: longitude
-      admin_ui: {width: 200}
-      type: number
-  interface_types:
-    title: Interface_Types
-    client: search
-    server: full
-    columns:
-    - name: Interface_Type
-      admin_ui: {width: 200}
-      type: string
-  test:
-    title: test
-    client: search
-    server: full
-    columns:
-    - name: name
-      admin_ui: {width: 200}
-      type: string
-    - name: employed
-      admin_ui: {width: 200}
-      type: string
-    - name: age
+    - name: project_board
       admin_ui: {width: 200}
       type: string

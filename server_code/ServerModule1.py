@@ -1,3 +1,6 @@
+import anvil.tables as tables
+import anvil.tables.query as q
+from anvil.tables import app_tables
 import anvil.google.auth, anvil.google.drive, anvil.google.mail
 from anvil.google.drive import app_files
 import anvil.tables as tables
@@ -19,10 +22,10 @@ def export_to_csv():
 @anvil.server.background_task
 @anvil.server.callable
 def make_backup():
-    list_of_tables = ['application_area', 'geography','interface_types','last_date_refreshed','location','suppported_products','test','users']
-    folder = app_files.systems_and_customers_tables_backup
+    list_of_tables = ['last_date_refreshed', 'projects','projects_stages','stage_translate','work','users']
+    folder = app_files.project_wip_tables_backup
     today = datetime.now()
-    new_folder = folder.create_folder('systems_backup'+'_'+str(today))
+    new_folder = folder.create_folder('project_wip_backup'+'_'+str(today))
     for item in list_of_tables:
        print(item)
              # rows = getattr(app_tables, 'tablename').search()
