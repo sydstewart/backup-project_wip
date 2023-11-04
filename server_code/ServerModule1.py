@@ -27,7 +27,7 @@ def make_backup():
     folder = app_files.project_wip_tables_backup
     today = datetime.now()
     new_folder = folder.create_folder('project_wip_backup'+'_'+str(today))
-    filelist =''
+    fileslist =''
     for item in list_of_tables:
        print(item)
              # rows = getattr(app_tables, 'tablename').search()
