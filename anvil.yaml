@@ -3,7 +3,7 @@ scheduled_tasks:
   time_spec:
     n: 1
     every: day
-    at: {minute: 47, hour: 10}
+    at: {minute: 15, hour: 19}
   job_id: CSEAIMCX
 dependencies: []
 services:
