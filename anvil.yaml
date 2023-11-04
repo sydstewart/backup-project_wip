@@ -206,6 +206,10 @@ services:
       quotaBytesUsed: '0'
       ownerNames: [Syd Stewart]
   server_config: {enc_delegation_refresh_token: VxRQ0QvBdFGE4silqLErC6McRzN61vH0QtSKmcoH+5iv68VBJKMNNkU4DH2pi1ztbDqMSJuGJw2fW1GuwIkfXm3y3QH1He8+yyQBJuAc4+6ze3JpCda0+UJ3k2uYhd2gi6yv422SCZ72AneGTRbWC4NBhKPGK5cHSZLUwyW1ACewYsJjX4833Bx5R4OS3Q9SGSiku2rvq9HQ8af8qINPDhuSik8XS3mv6OucCPD377xBF10RyWsTe8viwvT+8uWAwyPeYnIcAloWlEaDYzzm17ixGZ0KMEf2RcjlMEiuHaCWbcV09ulwUd/wItL8Bg==}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {custom_smtp: true, smtp_host: mail.smtp2go.com, smtp_port: 2525,
+    smtp_user: syd@4s-dawn.com, smtp_password: Dzkzd8n6oWZ01NLt/u4PATpPnZCvVNk+KnnlVZUjJjGj9/eJ3N5zN+Q91WSXfOY0cMyhuV9mUGmaEwIvQxxL4bWTUR2I33HlCnkh9z04se2RovoPEbgEyvfvszECgYfK6NH3g6eeS3x0DSgowXXB1asMgOMPwi3TsplY8tb49omEHdzboQ==}
 package_name: Backup_Change_Notes
 allow_embedding: false
 name: Backup of Project WIP

@@ -1,3 +1,4 @@
+import anvil.email
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
@@ -26,6 +27,7 @@ def make_backup():
     folder = app_files.project_wip_tables_backup
     today = datetime.now()
     new_folder = folder.create_folder('project_wip_backup'+'_'+str(today))
+    filelist =''
     for item in list_of_tables:
        print(item)
              # rows = getattr(app_tables, 'tablename').search()
@@ -35,5 +37,14 @@ def make_backup():
        table_csv = getattr(app_tables, db_name).search().to_csv()
        filename0 = item + '_' +str(today)+' .csv'
        new_file0 = new_folder.create_file(filename0, table_csv)
+       fileslist = fileslist + filename0 + '\n'
+    address ='syd'
+    send_email(address, fileslist)
 
-
+@anvil.server.callable
+def send_email(address,fileslist):
+    anvil.email.send(
+                 from_name = "Project WIP Backup", 
+                 to = "sydney.w.stewart@gmail.com",
+                 subject = 'Project WIP Backup Run',
+                 text = fileslist)
