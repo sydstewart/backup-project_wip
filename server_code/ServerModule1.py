@@ -38,7 +38,7 @@ def make_backup():
        filename0 = item + '_' +str(today)+' .csv'
        new_file0 = new_folder.create_file(filename0, table_csv)
        fileslist = fileslist + filename0 + '\n'
-    address ='syd'
+    address ='sydney.w.stewart@gmail.com'
     send_email(address, fileslist)
 
 @anvil.server.callable
