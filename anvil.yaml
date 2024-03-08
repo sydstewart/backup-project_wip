@@ -280,6 +280,9 @@ db_schema:
     - name: no_of_days_work
       admin_ui: {width: 200}
       type: number
+    - name: new_stage
+      admin_ui: {width: 200}
+      type: string
   projects:
     title: projects
     client: search
@@ -338,3 +341,17 @@ db_schema:
     - name: project_board
       admin_ui: {width: 200}
       type: string
+  completed_work:
+    title: Completed_work
+    client: none
+    server: full
+    columns:
+    - name: Order_Value_Completed
+      admin_ui: {width: 200}
+      type: number
+    - name: Date_entered
+      admin_ui: {width: 200}
+      type: datetime
+    - name: delta_work
+      admin_ui: {width: 200}
+      type: number

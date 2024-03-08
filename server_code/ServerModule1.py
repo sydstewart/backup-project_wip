@@ -23,7 +23,7 @@ def export_to_csv():
 @anvil.server.background_task
 @anvil.server.callable
 def make_backup():
-    list_of_tables = ['last_date_refreshed', 'projects','projects_stages','stage_translate','work','users']
+    list_of_tables = ['last_date_refreshed', 'projects','projects_stages','stage_translate','work','users','completed_work']
     folder = app_files.project_wip_tables_backup
     today = datetime.now()
     new_folder = folder.create_folder('project_wip_backup'+'_'+str(today))
