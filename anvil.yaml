@@ -24,7 +24,7 @@ services:
         displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       shared: false
@@ -34,20 +34,18 @@ services:
       - displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
       spaces: [drive]
       parents:
-      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/parents/0AFZ846S7fbL-Uk9PVA',
-        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/parents/0AFZ846S7fbL-Uk9PVA', id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
       labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
       iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
       selfLink: https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R
       lastViewedByMeDate: '2023-03-26T15:20:23.183Z'
-      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/permissions/me',
-        etag: '"lmHYE6ERLFL5nRZJAp5G9C8o20E"', pendingOwner: false}
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1bJr2dnkD1wd8lNsHvAsiT92neYKKoM2R/permissions/me', etag: '"lmHYE6ERLFL5nRZJAp5G9C8o20E"', pendingOwner: false}
       lastModifyingUserName: Syd Stewart
       etag: '"MTY3OTg0NDAyMzE4Mw"'
       kind: drive#file
@@ -72,7 +70,7 @@ services:
         displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       shared: false
@@ -82,20 +80,18 @@ services:
       - displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
       spaces: [drive]
       parents:
-      - {selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/parents/0AFZ846S7fbL-Uk9PVA',
-        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/parents/0AFZ846S7fbL-Uk9PVA', id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
       labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
       iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
       selfLink: https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-
       lastViewedByMeDate: '2023-03-26T15:27:04.141Z'
-      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/permissions/me',
-        etag: '"RCXxeVOMaWhyXLRZ_nqSYC5jWcU"', pendingOwner: false}
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/14WQU2LF5tZVHBuV6pnkWk2OFdT4-1Q7-/permissions/me', etag: '"RCXxeVOMaWhyXLRZ_nqSYC5jWcU"', pendingOwner: false}
       lastModifyingUserName: Syd Stewart
       etag: '"MTY3OTg0NDQyNDE0MQ"'
       kind: drive#file
@@ -120,7 +116,7 @@ services:
         displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       shared: false
@@ -130,20 +126,18 @@ services:
       - displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
       spaces: [drive]
       parents:
-      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/parents/0AFZ846S7fbL-Uk9PVA',
-        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/parents/0AFZ846S7fbL-Uk9PVA', id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
       labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
       iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
       selfLink: https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6
       lastViewedByMeDate: '2023-03-27T11:51:04.356Z'
-      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/permissions/me',
-        etag: '"lYTprH3YpHRnsO5tlqSFTohWJxE"', pendingOwner: false}
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1vbBmQ7Dljp6UbTaixwrDxc5NtVktXxj6/permissions/me', etag: '"lYTprH3YpHRnsO5tlqSFTohWJxE"', pendingOwner: false}
       lastModifyingUserName: Syd Stewart
       etag: '"MTY3OTkxNzg2NDM1Ng"'
       kind: drive#file
@@ -168,7 +162,7 @@ services:
         displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       shared: false
@@ -178,20 +172,18 @@ services:
       - displayName: Syd Stewart
         kind: drive#user
         isAuthenticatedUser: true
-        permissionId: 06139115947875066540
+        permissionId: '06139115947875066540'
         emailAddress: stewartsyd70@gmail.com
         picture: {url: 'https://lh3.googleusercontent.com/a/default-user=s64'}
       markedViewedByMeDate: '1970-01-01T00:00:00.000Z'
       spaces: [drive]
       parents:
-      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv/parents/0AFZ846S7fbL-Uk9PVA',
-        id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
+      - {selfLink: 'https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv/parents/0AFZ846S7fbL-Uk9PVA', id: 0AFZ846S7fbL-Uk9PVA, isRoot: true, kind: drive#parentReference, parentLink: 'https://www.googleapis.com/drive/v2/files/0AFZ846S7fbL-Uk9PVA'}
       labels: {viewed: true, restricted: false, starred: false, hidden: false, trashed: false}
       iconLink: https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.folder
       selfLink: https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv
       lastViewedByMeDate: '2023-03-27T15:08:41.636Z'
-      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv/permissions/me',
-        etag: '"jtuJu4D10p_ETFSLOlcCaDlTNMQ"', pendingOwner: false}
+      userPermission: {id: me, type: user, role: owner, kind: drive#permission, selfLink: 'https://www.googleapis.com/drive/v2/files/1oWA3JooJoObuK43UX5Do4Lurn9XuGtfv/permissions/me', etag: '"jtuJu4D10p_ETFSLOlcCaDlTNMQ"', pendingOwner: false}
       lastModifyingUserName: Syd Stewart
       etag: '"MTY3OTkyOTcxNjY3NQ"'
       kind: drive#file
@@ -208,9 +200,7 @@ services:
   server_config: {enc_delegation_refresh_token: VxRQ0QvBdFGE4silqLErC6McRzN61vH0QtSKmcoH+5iv68VBJKMNNkU4DH2pi1ztbDqMSJuGJw2fW1GuwIkfXm3y3QH1He8+yyQBJuAc4+6ze3JpCda0+UJ3k2uYhd2gi6yv422SCZ72AneGTRbWC4NBhKPGK5cHSZLUwyW1ACewYsJjX4833Bx5R4OS3Q9SGSiku2rvq9HQ8af8qINPDhuSik8XS3mv6OucCPD377xBF10RyWsTe8viwvT+8uWAwyPeYnIcAloWlEaDYzzm17ixGZ0KMEf2RcjlMEiuHaCWbcV09ulwUd/wItL8Bg==}
 - source: /runtime/services/anvil/email.yml
   client_config: {}
-  server_config: {custom_smtp: false, smtp_host: mail.smtp2go.com, smtp_port: 2525,
-    smtp_user: syd@4s-dawn.com, smtp_password: z8c+nb55suFX3h6SgEZyJBQFHKXN6fOBZGii7+ltq9eLQcilOl/KxS34waKS2Ksnw9fn2gYdxW07e20OHk/um0upPoXnmtTEO6Dm83+iQT/siFNt5sYG+oxiAZe6WU9Fi0BjEYqWOVBKY5HT8uEGYBsufZ3POk9WILMtp50lhPZK2lZkyA==,
-    test_mode: false}
+  server_config: {custom_smtp: false, smtp_host: mail.smtp2go.com, smtp_port: 2525, smtp_user: syd@4s-dawn.com, smtp_password: z8c+nb55suFX3h6SgEZyJBQFHKXN6fOBZGii7+ltq9eLQcilOl/KxS34waKS2Ksnw9fn2gYdxW07e20OHk/um0upPoXnmtTEO6Dm83+iQT/siFNt5sYG+oxiAZe6WU9Fi0BjEYqWOVBKY5HT8uEGYBsufZ3POk9WILMtp50lhPZK2lZkyA==, test_mode: false}
 package_name: Backup_Change_Notes
 allow_embedding: false
 name: Backup of Project WIP
